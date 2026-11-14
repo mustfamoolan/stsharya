@@ -1,0 +1,55 @@
+{
+  "name": "alestsharia",
+  "productName": "الاستشارية",
+  "version": "1.0.0",
+  "description": "الاستشارية - نظام إدارة ومتابعة المرضى والعمليات والحقن",
+  "main": "./out/main/index.js",
+  "author": "Antigravity",
+  "scripts": {
+    "start": "electron-vite dev",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.node.json",
+    "pack:win": "electron-vite build && electron-builder --win --dir"
+  },
+  "build": {
+    "appId": "com.alestsharia.app",
+    "productName": "الاستشارية",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "resources/**/*"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "icon": "resources/icon.ico"
+    }
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.6.2",
+    "clsx": "^2.1.1",
+    "cross-env": "^10.1.0",
+    "electron": "^34.2.0",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^6.0.0",
+    "postcss": "^8.5.32",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}

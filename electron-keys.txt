@@ -1,0 +1,5 @@
+{
+  "type": "string",
+  "isString": true,
+  "keys": "D:\\courss\\node_modules\\electron\\dist\\electron.exe"
+}
